@@ -213,7 +213,7 @@
             <useReleaseProfile>false</useReleaseProfile>
             <autoVersionSubmodules>true</autoVersionSubmodules>
             <arguments>${arguments} -Pindoqa-release,indoqa-tests,indoqa-oss-release</arguments>
-            <goals>deploy nexus-staging:release</goals>
+            <goals>deploy</goals>
           </configuration>
         </plugin>
         <plugin>
