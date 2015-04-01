@@ -333,7 +333,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
-          <version>2.2.1</version>
+          <version>2.4</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -369,21 +369,33 @@
     <profile>
       <id>indoqa-oss-release</id>
       <build>
+      <resources>
+        <resource>
+          <directory>${project.license.rootDir}</directory>
+          <targetPath>META-INF</targetPath>
+          <includes>
+            <!-- Do not forget to include files also for javadoc jar -->
+            <include>LICENSE</include>
+            <include>NOTICE</include>
+          </includes>
+        </resource>
+      </resources>
         <plugins>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-resources-plugin</artifactId>
             <executions>
               <execution>
-                <id>copy-resources</id>
+                <id>copy-resources-javadoc</id>
                 <phase>generate-resources</phase>
                 <goals>
                   <goal>copy-resources</goal>
                 </goals>
                 <configuration>
-                  <outputDirectory>${basedir}/target/classes/META-INF</outputDirectory>
+                  <outputDirectory>${basedir}/target/apidocs/META-INF</outputDirectory>
                   <resources>
                     <resource>
+                      <!-- Do not forget to include files also for jar and sources jar -->
                       <directory>${project.license.rootDir}</directory>
                       <include>NOTICE</include>
                       <include>LICENSE</include>
