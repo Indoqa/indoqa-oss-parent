@@ -22,7 +22,7 @@
 
   <groupId>com.indoqa</groupId>
   <artifactId>indoqa-oss-parent</artifactId>
-  <version>11-SNAPSHOT</version>
+  <version>11</version>
 
   <name>Indoqa OSS Parent</name>
   <url>https://github.com/indoqa/</url>
@@ -45,7 +45,7 @@
     <connection>scm:git:git@github.com:Indoqa/indoqa-oss-parent.git</connection>
     <developerConnection>scm:git:git@github.com:Indoqa/indoqa-oss-parent.git</developerConnection>
     <url>https://github.com/Indoqa/indoqa-oss-parent</url>
-    <tag>indoqa-oss-parent-7</tag>
+    <tag>indoqa-oss-parent-11</tag>
   </scm>
 
   <distributionManagement>
