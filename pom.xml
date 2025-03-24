@@ -22,7 +22,7 @@
 
   <groupId>com.indoqa</groupId>
   <artifactId>indoqa-oss-parent</artifactId>
-  <version>7</version>
+  <version>8-SNAPSHOT</version>
 
   <name>Indoqa OSS Parent</name>
   <url>https://github.com/indoqa/</url>
