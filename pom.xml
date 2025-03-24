@@ -48,6 +48,13 @@
     <tag>indoqa-oss-parent-7</tag>
   </scm>
 
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <developers>
     <developer>
       <name>Steven Dolg</name>
